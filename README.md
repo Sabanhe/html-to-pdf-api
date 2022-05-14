@@ -63,7 +63,17 @@ If you want to download PDF on a button click use it like this:
         }
         
     );`
+    
+## What can I expect from this?
+Well you can do almost anything with it. It's simple to use and only one request needed for PDF file, so simple.
+You can make almost any design, use imports of tailwing, bootstrap and any other design framework
    
+I tested it with this import:
+`<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />`
+and it works perfectly.
+
+Example:
+![Screenshot 2022-05-15 at 01 42 47](https://user-images.githubusercontent.com/16545032/168451484-e99f7115-599d-4211-a7bb-0e54cc377942.png)
 
 ## License
 This is public domain.
