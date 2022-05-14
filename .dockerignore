@@ -1,0 +1,4 @@
+*
+!Dockerfile
+!app/*js
+!app/package.json
