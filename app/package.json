@@ -1,0 +1,14 @@
+{
+  "name": "html-to-pdf-api",
+  "version": "1.0.0",
+  "description": "Simple microservice which will allowe you to create pdf from html by simply sending post request with html string.",
+  "main": "app.js",
+  "author": "Saban Heric <sabanhe@gmail.com>",
+  "license": "UNLICENSE",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "wkhtmltopdf": "^0.3.4"
+  }
+}
