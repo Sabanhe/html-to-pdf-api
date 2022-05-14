@@ -29,25 +29,39 @@ If you are using ReactJS, you can easily transform any component to string HTML,
 
 Converting component to string HTML:
 `import { renderToString } from "react-dom/server";
+
 renderToString(anyComponent)`
 
 Now you can send this string via fetch or axios instance request.
 If you want to download PDF on a button click use it like this:
 
 `const response = await pdfGenerator.post(
+
         "/",
+        
         {
+        
             content: renderToString(
+            
                 renderToString(anyComponent), //or any other HTML string
+                
             ),
+            
             options: { pageSize: "letter" },
+            
         },
+        
         {
             responseType: "blob", // blob will tell that we are wanting file to be downloaded, and not bite array
+            
             headers: {
+            
                 Accept: "application/pdf",
+                
             },
+            
         }
+        
     );`
    
 
