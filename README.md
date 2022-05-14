@@ -65,7 +65,7 @@ If you want to download PDF on a button click use it like this:
     );`
     
 ## What can I expect from this?
-Well you can do almost anything with it. It's simple to use and only one request needed for PDF file, so simple.
+Well you can do almost anything with it. It's simple to use, only one step (one request) keeps you away from generated PDF, so simple.
 You can make almost any design, use imports of tailwing, bootstrap and any other design framework
    
 I tested it with this import:
