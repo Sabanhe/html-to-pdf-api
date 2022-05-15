@@ -67,7 +67,7 @@ If you want to download PDF on a button click use it like this:
 ## Image download instead of PDF
 If you want do download preview of any html or any web page and get response in image format, you can.
 
-`curl --location --request POST 'http://localhost:8985/image' \
+`curl --location --request POST 'http://localhost:8080/image' \
 --header 'Content-Type: application/json' \
 --data-raw '{"content":"https://google.com","options":{ "format": "png", "width": "1024" }}'`
 
