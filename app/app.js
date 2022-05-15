@@ -1,6 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var wkhtmltopdf = require('wkhtmltopdf');
+var wkhtmltoimage = require('wkhtmltoimage');
 var cors = require('cors');
 var app = express();
 
@@ -12,6 +13,10 @@ app.use(cors({
 app.post('/', (req, res) => {
   res.setHeader('content-type', 'application/pdf');
   wkhtmltopdf(req.body.content, req.body.options).pipe(res);
+});
+
+app.post('/image', (req, res) => {
+  wkhtmltoimage.generate(req.body.content, req.body.options).pipe(res);
 });
 
 app.listen(8080, function () {
