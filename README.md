@@ -64,6 +64,15 @@ If you want to download PDF on a button click use it like this:
         
     );`
     
+## Image download instead of PDF
+If you want do download preview of any html or any web page and get response in image format, you can.
+
+`curl --location --request POST 'http://localhost:8985/image' \
+--header 'Content-Type: application/json' \
+--data-raw '{"content":"https://google.com","options":{ "format": "png", "width": "1024" }}'`
+
+What you can send in options is: quality (default is 94: int), width (def. 1024: int), height, format (png, jpg...: string), for more info read here [wkhtmltopdf](https://wkhtmltopdf.org/). If you don't want to use options, just remove options property from json boy.
+    
 ## What can I expect from this?
 Well you can do almost anything with it. It's simple to use, only one step (one request) keeps you away from generated PDF, so simple.
 You can make almost any design, use imports of tailwing, bootstrap and any other design framework
