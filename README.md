@@ -84,5 +84,8 @@ and it works perfectly.
 Example:
 ![Screenshot 2022-05-15 at 01 42 47](https://user-images.githubusercontent.com/16545032/168451484-e99f7115-599d-4211-a7bb-0e54cc377942.png)
 
+## Notes
+Just have in mind that you can provide url and html string inside of content body parameter.
+
 ## License
 This is public domain.
